@@ -319,44 +319,50 @@ nav a:hover {
     border-radius: 4px;
 }
 
-footer {
-    background-color: var(--dark-grey);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
+.footer {
+  width: 100%;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #4a5568;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.footer h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer a {
+  color: #4a5568;
+  text-decoration: none;
+  margin: 8px 0;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .social-icons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .social-icon {
-    color: #555;
-    font-size: 2rem;
-    transition: color 0.3s ease;
-    text-decoration: none;
-  }
-  
-  .social-icon:hover {
-    color: #0077b5; /* Cambia el color dependiendo del ícono */
-  }
-  
-  .social-icon:nth-child(1):hover {
-    color: #25d366; /* WhatsApp */
-  }
-  
-  .social-icon:nth-child(2):hover {
-    color: #e1306c; /* Instagram */
-  }
-  
-  .social-icon:nth-child(3):hover {
-    color: #0077b5; /* LinkedIn */
-  }
-  
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.social-icons a:hover {
+  color: #1a202c;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-top: 16px;
+}
 
 .benefits-container {
     display: flex;

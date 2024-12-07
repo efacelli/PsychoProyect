@@ -142,30 +142,34 @@ nav a:hover {
     background-color: white;
     padding: 4rem 2rem;
     text-align: center;
-}
-
-.hero-quote {
+  }
+  
+  .hero-quote {
     font-style: italic;
     font-size: 1.5rem;
     color: var(--dark-grey);
     max-width: 800px;
     margin: 0 auto;
-}
-
+  }
+  
+  /* Hero container */
   .hero-container {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
     height: 100vh;
     overflow: hidden;
     position: relative;
     align-items: center; /* Centrar contenido verticalmente */
   }
   
+  /* Contenido del Hero */
   .hero-content {
-    width: 50%;
+    width: 50%; /* Ocupa la mitad del ancho en pantallas grandes */
     padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left; /* Alineación izquierda por defecto */
   }
   
   .hero-title {
@@ -183,24 +187,9 @@ nav a:hover {
     max-width: 600px;
   }
   
-  .hero-button {
-    background-color: green;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: fit-content;
-  }
-  
-  .hero-button:hover {
-    background-color: darkgreen;
-  }
-  
+  /* Imagen del Hero */
   .hero-image {
-    width: 50%;
+    width: 50%; /* Ocupa la mitad del ancho en pantallas grandes */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,7 +202,6 @@ nav a:hover {
     border-radius: 8px; /* Opcional: bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
   }
-  
 
   .hashtags {
     padding: 2rem;
@@ -516,51 +504,55 @@ nav a:hover {
 
 
 .benefits-container {
-    display: flex;
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .benefits-text {
-    flex: 1;
-    padding: 3rem;
-    background-color: #fdf6f6;
+  flex: 1;
+  padding: 3rem;
+  background-color: #fdf6f6;
 }
 
 .benefits-image {
-    flex: 1;
-    padding: 2rem;
-    border-radius: 1%;
+  flex: 1;
+  background-image: url('./img/clariImg1.avif'); /* Aquí está la imagen como fondo */
+  background-size: cover; /* Cubre todo el espacio del contenedor */
+  background-position: center; /* Centra la imagen */
+  border-radius: 1%;
+  min-height: 300px; /* Ajusta el tamaño mínimo de la imagen */
 }
 
 .benefits-title {
-    color: var(--dark-grey);
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    line-height: 1.2;
+  color: var(--dark-grey);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
 .benefits-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .benefits-list li {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
-    font-size: 1.1rem;
-    line-height: 1.5;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .benefits-list li:before {
-    content: "►";
-    color: var(--dark-grey);
-    position: absolute;
-    left: 0;
-    font-size: 0.8rem;
+  content: "►";
+  color: var(--dark-grey);
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
 }
 
 
@@ -576,6 +568,7 @@ nav a:hover {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+        background-color: white;
     }
 
     nav a {
@@ -583,26 +576,26 @@ nav a:hover {
     }
 
     .hero-container {
-        flex-direction: column;
-        padding: 2rem 0;
-        height: auto;
-        text-align: center;
+      flex-direction: column; /* Cambia la disposición a columnas */
+      height: auto; /* Permite que el contenido se ajuste a la altura */
     }
-
+  
+    .hero-content, .hero-image {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      padding: 2rem;
+      text-align: center; /* Centra el texto */
+    }
+  
     .hero-title {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+      font-size: 2.5rem; /* Reduce el tamaño del título */
     }
-
+  
     .hero-text {
-        font-size: 1rem;
+      font-size: 1rem; /* Reduce el tamaño del texto */
     }
-
-    .hero-button {
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
-        margin: 1rem auto;
-        display: inline-block;
+  
+    .hero-image {
+      padding: 1rem; /* Reduce el padding para imágenes */
     }
 
     
@@ -632,16 +625,22 @@ nav a:hover {
         padding: 2rem 1rem;
       }
 
-    .benefits-container {
-        flex-direction: column;
-        gap: 2rem;
-        padding: 1rem;
-    }
-
-    .benefits-text {
-        padding: 1rem;
-        text-align: center;
-    }
+      .benefits-container {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+      }
+    
+      .benefits-text, .benefits-image {
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 2rem; /* Reduce el padding para optimizar espacio */
+      }
+    
+      .benefits-title {
+        font-size: 2rem; /* Reduce el tamaño del título */
+      }
+    
+      .benefits-list li {
+        font-size: 1rem; /* Reduce el tamaño de los ítems */
+      }
     
   .section-title {
       font-size: 2rem;
@@ -670,14 +669,15 @@ nav a:hover {
 
     nav a {
         font-size: 0.9rem;
+        background-color: white;
     }
 
     .hero-title {
-        font-size: 1.8rem;
+      font-size: 2rem; /* Aún más pequeño para pantallas muy reducidas */
     }
-
+  
     .hero-text {
-        font-size: 0.9rem;
+      font-size: 0.9rem;
     }
 
     .services-list {
@@ -689,7 +689,20 @@ nav a:hover {
         padding: 1rem;
     }
 
-    .get-started-btn {
-        font-size: 0.9rem;
+    .benefits-title {
+      font-size: 1.8rem; /* Ajuste adicional para pantallas más pequeñas */
     }
+  
+    .benefits-text {
+      padding: 1.5rem; /* Ajusta el padding en dispositivos pequeños */
+    }
+  
+    .benefits-list li {
+      font-size: 0.9rem;
+    }
+  
+    .benefits-image img {
+      max-width: 90%; /* Reduce el tamaño de la imagen en pantallas muy pequeñas */
+    }
+
 }

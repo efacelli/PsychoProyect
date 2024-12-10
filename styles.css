@@ -559,43 +559,69 @@ nav a:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
+
+
     header {
         padding: 1rem;
         text-align: center;
+    }
+
+
+    #menu {
+      background-color: #4398ec; /* Cambia el color de fondo a azul */
+      width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+      box-shadow: none; /* Elimina cualquier sombra si es necesario */
+    }
+  
+    /* Asegúrate de que los elementos dentro del menú también se ajusten */
+    .nav-menu {
+      background-color: #4398ec; /* Asegúrate de que el menú también sea azul */
+    }
+  
+    /* Estilos para los enlaces dentro del menú */
+    .nav-menu li a {
+      color: white; /* Cambia el color del texto a blanco para mejor contraste */
+    }
+
+    #navbar {
+      background-color: #ffffff !important;
+      background: none;
     }
 
     nav {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
-        background-color: white;
+        
     }
 
     nav a {
         margin: 0.5rem 0;
+        color: white;
+        font-weight: 100;
     }
 
     .hero-container {
-      flex-direction: column; /* Cambia la disposición a columnas */
-      height: auto; /* Permite que el contenido se ajuste a la altura */
+      flex-direction: column; 
+      height: auto; 
     }
   
     .hero-content, .hero-image {
-      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      width: 100%; 
       padding: 2rem;
-      text-align: center; /* Centra el texto */
+      text-align: center; 
     }
   
     .hero-title {
-      font-size: 2.5rem; /* Reduce el tamaño del título */
+      font-size: 2.5rem;
     }
   
     .hero-text {
-      font-size: 1rem; /* Reduce el tamaño del texto */
+      font-size: 1rem; 
     }
   
     .hero-image {
-      padding: 1rem; /* Reduce el padding para imágenes */
+      padding: 1rem;
     }
 
     
@@ -626,20 +652,20 @@ nav a:hover {
       }
 
       .benefits-container {
-        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+        flex-direction: column;
       }
     
       .benefits-text, .benefits-image {
-        width: 100%; /* Ocupa todo el ancho */
-        padding: 2rem; /* Reduce el padding para optimizar espacio */
+        width: 100%; 
+        padding: 2rem; 
       }
     
       .benefits-title {
-        font-size: 2rem; /* Reduce el tamaño del título */
+        font-size: 2rem; 
       }
     
       .benefits-list li {
-        font-size: 1rem; /* Reduce el tamaño de los ítems */
+        font-size: 1rem; 
       }
     
   .section-title {
@@ -673,7 +699,7 @@ nav a:hover {
     }
 
     .hero-title {
-      font-size: 2rem; /* Aún más pequeño para pantallas muy reducidas */
+      font-size: 2rem;
     }
   
     .hero-text {
@@ -690,11 +716,11 @@ nav a:hover {
     }
 
     .benefits-title {
-      font-size: 1.8rem; /* Ajuste adicional para pantallas más pequeñas */
+      font-size: 1.8rem; 
     }
   
     .benefits-text {
-      padding: 1.5rem; /* Ajusta el padding en dispositivos pequeños */
+      padding: 1.5rem; 
     }
   
     .benefits-list li {
@@ -702,7 +728,25 @@ nav a:hover {
     }
   
     .benefits-image img {
-      max-width: 90%; /* Reduce el tamaño de la imagen en pantallas muy pequeñas */
+      max-width: 90%; 
     }
 
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .hero-container {
+      height: auto; /* Cambia a 'auto' para que se ajuste al contenido */
+      padding: 20px; /* Ajusta el padding según sea necesario */
+      margin: 0 auto; /* Centra el contenedor si es necesario */
+      max-width: 800px; /* Limita el ancho máximo si es necesario */
+  }
+
+  .hero-container img {
+      max-width: 100%; /* Asegúrate de que la imagen no exceda el contenedor */
+      height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  .hero-container h1, .hero-container p {
+      margin: 10px 0; /* Ajusta los márgenes de los textos */
+  }
 }

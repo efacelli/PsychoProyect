@@ -170,6 +170,8 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: left; /* Alineación izquierda por defecto */
+    align-items: center;
+    margin-bottom: 250px;
   }
   
   .hero-title {
@@ -199,8 +201,7 @@ nav a:hover {
   .hero-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Opcional: bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+    border-radius: 8px; 
   }
 
   .hashtags {
@@ -610,6 +611,7 @@ nav a:hover {
       width: 100%; 
       padding: 2rem;
       text-align: center; 
+      margin-bottom: 0;
     }
   
     .hero-title {
@@ -704,6 +706,7 @@ nav a:hover {
   
     .hero-text {
       font-size: 0.9rem;
+      margin-bottom: 0;
     }
 
     .services-list {
@@ -748,5 +751,9 @@ nav a:hover {
 
   .hero-container h1, .hero-container p {
       margin: 10px 0; /* Ajusta los márgenes de los textos */
+  }
+
+  .hero-content {
+    margin-bottom: 0;
   }
 }

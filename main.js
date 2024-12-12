@@ -15,3 +15,4 @@ document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
         });
     });
 });
+

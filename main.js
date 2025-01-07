@@ -16,3 +16,26 @@ document.querySelectorAll('#navbar a[href^="#"]').forEach(anchor => {
     });
 });
 
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("#navbar");
+
+// Crear el overlay
+const overlay = document.createElement('div');
+overlay.className = 'nav-overlay';
+document.body.appendChild(overlay);
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+});
+
+// Cerrar menú cuando se hace clic en un enlace o en el overlay
+const closeMenu = () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    overlay.classList.remove("active");
+};
+
+document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", closeMenu));
+overlay.addEventListener("click", closeMenu);

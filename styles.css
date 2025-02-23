@@ -20,7 +20,7 @@ body {
 
 header {
     background-color: white;
-    padding: 1rem;
+    
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -184,7 +184,7 @@ nav a:hover {
   
 
   .hero {
-    background-color: white;
+    background-color: #FFD1DC;
     padding: 4rem 2rem;
     text-align: center;
   }
@@ -197,7 +197,7 @@ nav a:hover {
     margin: 0 auto;
   }
   
-  /* Hero container */
+  
   .hero-container {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
@@ -207,7 +207,7 @@ nav a:hover {
     align-items: center; /* Centrar contenido verticalmente */
   }
   
-  /* Contenido del Hero */
+  
   .hero-content {
     width: 50%; /* Ocupa la mitad del ancho en pantallas grandes */
     padding: 4rem;
@@ -234,7 +234,7 @@ nav a:hover {
     max-width: 600px;
   }
   
-  /* Imagen del Hero */
+  
   .hero-image {
     width: 50%; /* Ocupa la mitad del ancho en pantallas grandes */
     display: flex;
@@ -260,17 +260,17 @@ nav a:hover {
   padding: 20px;
 }
 
-/* Individual image styles */
+
 .sobre-mi-img {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border: 1px solid #e0e0e0; /* Fine border */
-  border-radius: 12px; /* Rounded corners */
+  border: 1px solid #e0e0e0; 
+  border-radius: 12px; 
   transition: transform 0.3s ease;
 }
 
-/* Optional hover effect */
+
 .sobre-mi-img:hover {
   transform: scale(1.02);
 }
@@ -349,8 +349,8 @@ nav a:hover {
   .section-title {
     margin-top: 5px;
     text-align: center;
-    font-family: "Cookie", cursive;
-    font-weight: 400;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
     font-style: normal;
     font-size: 3rem;
     margin-bottom: 1.5rem;
@@ -441,8 +441,8 @@ nav a:hover {
   position: relative;
   color: white;
   padding: 2%;
-  font-family: "Cookie", cursive;
-    font-weight: 400;
+  font-family: Arial, sans-serif;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -597,10 +597,10 @@ nav a:hover {
 .benefits-image {
   flex: 1;
   background-image: url('./img/clariImg1.avif'); /* Aquí está la imagen como fondo */
-  background-size: cover; /* Cubre todo el espacio del contenedor */
-  background-position: center; /* Centra la imagen */
+  background-size: cover; 
+  background-position: center; 
   border-radius: 1%;
-  min-height: 300px; /* Ajusta el tamaño mínimo de la imagen */
+  min-height: 300px; 
 }
 
 .benefits-title {
